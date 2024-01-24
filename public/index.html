@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pet Gallery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+      .pet-image {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row" id="petGallery"></div>
+    </div>
+
+    <script>
+      function loadAndDisplayPets() {
+        fetch('animals.json')
+          .then(response => response.json())
+          .then(data => {
+            let petHtml = '';
+            data.animals.forEach(pet => {
+              const genderIcon = pet.Sex === 'Male' ? 'male.svg' : 'female.svg';
+              petHtml += `
+                <div class="col-md-4">
+                  <div class="card">
+                    <img src="${pet.Image}" class="card-img-top pet-image" alt="${pet.Breed}">
+                    <div class="card-body">
+                      <h5 class="card-title">${pet.Name}</h5>
+                      <p class="card-text">Breed: ${pet.Breed}</p>
+                      <p class="card-text">Type: ${pet.Type}</p>
+                      <p class="card-text"><b>Age: ${pet.Age}</b></p>
+                      <p class="card-text"><img src="images/${genderIcon}" alt="${pet.Sex}" style="height: 20px;"></p>
+                      <a href="detail.html?id=${encodeURIComponent(pet['Animal ID'])}" class="btn btn-primary">Learn More</a>
+                    </div>
+                  </div>
+                </div>`;
+            });
+            document.getElementById('petGallery').innerHTML = petHtml;
+          })
+          .catch(error => console.error('Error loading pet data:', error));
+      }
+
+      window.onload = loadAndDisplayPets;
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
