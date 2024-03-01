@@ -1,556 +1,568 @@
 {
-  "animals": [
-      {
-          "Name": "Baxter",
-          "Type": "Dog",
-          "Breed": "Beagle",
-          "Sex": "Male",
-          "Color": "Tri-color (Black, Brown, White)",
-          "Spayed / Neutered": "Yes",
-          "Age": "5 Years",
-          "Animal ID": "34621",
-          "Microchip Number": "982000364789210",
-          "Status": [
-              "Health checked.",
-              "Vaccinations up to date.",
-              "Regularly dewormed.",
-              "Microchipped."
-          ],
-          "A Little Bit About Me": "Meet Baxter, a lovable Beagle with a knack for sniffing out fun! Baxter was rescued from a shelter and has blossomed into a friendly and outgoing boy. He loves long walks and has a keen sense of smell. He's great with kids and other dogs, making him the perfect family pet. His favorite pastime is chasing squirrels in the park and curling up for naps. Baxter is looking for a loving home where he can share his endless affection and playful spirit.",
-          "Image": "images/beagle.jpg"
-      },
-      {
-          "Name": "Luna",
-          "Type": "Cat",
-          "Breed": "Maine Coon",
-          "Sex": "Female",
-          "Color": "Grey with white markings",
-          "Spayed / Neutered": "Yes",
-          "Age": "3 Years",
-          "Animal ID": "57281",
-          "Microchip Number": "981120019776432",
-          "Status": [
-              "Health checked.",
-              "Vaccinations up to date.",
-              "Regularly dewormed.",
-              "Microchipped."
-          ],
-          "A Little Bit About Me": "Luna is a majestic Maine Coon with a fluffy grey coat and striking white markings. She was found as a stray and has since become a gentle and affectionate companion. Luna enjoys perching on windowsills, watching birds, and being the center of attention. She's a bit shy at first but warms up quickly, especially if you have treats! Luna would thrive in a calm environment where she can relax and be pampered like the queen she is.",
-          "Image": "images/mainecoon.jpg"
-      },
-      {
-          "Name": "Sandy",
-          "Type": "Dog",
-          "Breed": "Golden Retriever",
-          "Sex": "Female",
-          "Color": "Golden",
-          "Spayed / Neutered": "Yes",
-          "Age": "7 Years",
-          "Animal ID": "41382",
-          "Microchip Number": "985112004567890",
-          "Status": [
-              "Health checked.",
-              "Vaccinations up to date.",
-              "Regularly dewormed.",
-              "Microchipped."
-          ],
-          "A Little Bit About Me": "Sandy is a heartwarming Golden Retriever with a golden coat as bright as her personality. Rescued from a neglectful situation, she has shown incredible resilience and love for life. Sandy is great with children and other pets, making her an ideal family dog. She enjoys outdoor adventures, especially swimming and fetching. Sandy is looking for a forever home where she can spread her joy and love.",
-          "Image": "images/golden.jpg"
-      },
-      {
-          "Name": "Oliver",
-          "Type": "Cat",
-          "Breed": "Siamese",
-          "Sex": "Male",
-          "Color": "Seal Point",
-          "Spayed / Neutered": "Yes",
-          "Age": "2 Years",
-          "Animal ID": "62894",
-          "Microchip Number": "981120025678902",
-          "Status": [
-              "Health checked.",
-              "Vaccinations up to date.",
-              "Regularly dewormed.",
-              "Microchipped."
-          ],
-          "A Little Bit About Me": "Oliver is a sleek Siamese cat with striking blue eyes and a seal point coat. Found wandering in a neighborhood, he's adapted well to shelter life but is eager for a permanent home. Oliver is vocal, expressing his thoughts freely, and enjoys interactive playtime. He's affectionate and loves to be close to his human companions, often following them around the house. Oliver would do best in a home where he can receive plenty of attention and love.",
-          "Image": "images/siamese.jpg"
-      },
-      {
-          "Name": "Max",
-          "Type": "Dog",
-          "Breed": "Labrador Retriever",
-          "Sex": "Male",
-          "Color": "Chocolate",
-          "Spayed / Neutered": "Yes",
-          "Age": "4 Years",
-          "Animal ID": "47920",
-          "Microchip Number": "985120031478902",
-          "Status": [
-              "Health checked.",
-              "Vaccinations up to date.",
-              "Regularly dewormed.",
-              "Microchipped."
-          ],
-          "A Little Bit About Me": "Max is a charming Chocolate Labrador with a love for life and a tail that never stops wagging. Rescued from an overcrowded shelter, Max has shown immense gratitude and loyalty to his caregivers. He is full of energy and would thrive in a home with a backyard or regular access to outdoor activities. Max is great with children and other dogs, and he's always up for a game of fetch or a leisurely walk. His ideal home would be with an active family who can match his energy and zest for life.",
-          "Image": "images/chocolab.jpg"
-      },
-      {
-          "Name": "Daisy",
-          "Type": "Cat",
-          "Breed": "Persian",
-          "Sex": "Female",
-          "Color": "White",
-          "Spayed / Neutered": "Yes",
-          "Age": "6 Years",
-          "Animal ID": "58329",
-          "Microchip Number": "981120036712345",
-          "Status": [
-              "Health checked.",
-              "Vaccinations up to date.",
-              "Regularly dewormed.",
-              "Microchipped."
-          ],
-          "A Little Bit About Me": "Daisy is a stunning white Persian cat with a luxurious coat and gentle demeanor. She was surrendered by an owner who could no longer care for her. Daisy is a bit of a diva and loves being the center of attention. She enjoys being groomed and will happily sit in your lap for hours. She's not fond of loud noises or fast movements, so a quiet and calm household would be ideal. Daisy is looking for a loving home where she can be pampered and adored.",
-          "Image": "images/persian.jpg"
-      },
-      {
-          "Name": "Charlie",
-          "Type": "Dog",
-          "Breed": "Dachshund",
-          "Sex": "Male",
-          "Color": "Dapple (Black and Gray)",
-          "Spayed / Neutered": "Yes",
-          "Age": "3 Years",
-          "Animal ID": "49583",
-          "Microchip Number": "982000367829101",
-          "Status": [
-              "Health checked.",
-              "Vaccinations up to date.",
-              "Regularly dewormed.",
-              "Microchipped."
-          ],
-          "A Little Bit About Me": "Charlie is a spirited Dapple Dachshund with a playful personality. He was found as a stray and has since shown an incredible zest for life. Charlie loves exploring, whether it's a new trail or the corners of his home. He's a bit mischievous and enjoys hiding his toys. Charlie would do well in a home with an individual or family who enjoys fun and adventure. He's small but has a big heart and a lot of love to give.",
-          "Image": "images/dachshund.jpg"
-      },
-      {
-          "Name": "George",
-          "Type": "Cat",
-          "Breed": "British Shorthair",
-          "Sex": "Male",
-          "Color": "Blue (Gray)",
-          "Spayed / Neutered": "Yes",
-          "Age": "4 Years",
-          "Animal ID": "61029",
-          "Microchip Number": "985112007651234",
-          "Status": [
-              "Health checked.",
-              "Vaccinations up to date.",
-              "Regularly dewormed.",
-              "Microchipped."
-          ],
-          "A Little Bit About Me": "George is a robust British Shorthair with a striking blue-gray coat and a calm, dignified demeanor. Rescued from a busy city environment, he's adapted well to a quieter life. George enjoys leisurely days, lounging in sunny spots, and watching the world go by. He's not overly demanding for attention but appreciates a good chin scratch and will purr loudly in response. George is a bit reserved at first but becomes a loyal companion once he feels comfortable. He would be perfect for someone seeking a low-maintenance, independent cat.",
-          "Image": "images/british.jpg"
-      },
-      {
-          "Name": "Bella",
-          "Type": "Dog",
-          "Breed": "Boxer",
-          "Sex": "Female",
-          "Color": "Fawn with white markings",
-          "Spayed / Neutered": "Yes",
-          "Age": "6 Years",
-          "Animal ID": "50824",
-          "Microchip Number": "982000360234567",
-          "Status": [
-              "Health checked.",
-              "Vaccinations up to date.",
-              "Regularly dewormed.",
-              "Microchipped."
-          ],
-          "A Little Bit About Me": "Bella is a spirited Boxer with a fawn coat and charming white markings. She was rescued from a neglectful situation and has shown immense love and gratitude to her caregivers. Bella is energetic and playful, enjoying activities like running and playing fetch. She's great with older children and would thrive in a home where she can be active and engaged. Bella has a big personality and would be a fantastic companion for someone who loves adventure and fun.",
-          "Image": "images/boxer.jpg"
-      },
-      {
-          "Name": "Sophie",
-          "Type": "Cat",
-          "Breed": "Ragdoll",
-          "Sex": "Female",
-          "Color": "Seal point with blue eyes",
-          "Spayed / Neutered": "Yes",
-          "Age": "1 Year",
-          "Animal ID": "63845",
-          "Microchip Number": "985112008765432",
-          "Status": [
-              "Health checked.",
-              "Vaccinations up to date.",
-              "Regularly dewormed.",
-              "Microchipped."
-          ],
-          "A Little Bit About Me": "Sophie is a young Ragdoll cat with a soft seal point coat and mesmerizing blue eyes. She was found as a kitten and raised in a foster home. Sophie is incredibly affectionate, often seeking out laps to curl up in. She's playful and enjoys interactive toys, but she's also content to relax and watch the world go by. Sophie gets along well with other pets and would be an excellent addition to a loving family or individual looking for a gentle and loving companion.",
-          "Image": "images/ragdoll.jpg"
-      },
-      {
-          "Name": "Rocky",
-          "Type": "Dog",
-          "Breed": "German Shepherd",
-          "Sex": "Male",
-          "Color": "Black and Tan",
-          "Spayed / Neutered": "Yes",
-          "Age": "3 Years",
-          "Animal ID": "73820",
-          "Microchip Number": "982000365432189",
-          "Status": [
-              "Health checked.",
-              "Vaccinations up to date.",
-              "Regularly dewormed.",
-              "Microchipped."
-          ],
-          "A Little Bit About Me": "Rocky is a loyal and intelligent German Shepherd with a striking black and tan coat. He's a quick learner and loves to show off his obedience skills. Rocky enjoys outdoor activities like hiking and jogging, and he's always up for an adventure. He's great with older children and adults and is protective of his family. Rocky is looking for an experienced owner who can provide him with the mental and physical stimulation he needs to thrive.",
-          "Image": "images/germanshepherd.jpg"
-      },
-      {
-          "Name": "Mittens",
-          "Type": "Cat",
-          "Breed": "Domestic Shorthair",
-          "Sex": "Female",
-          "Color": "Tabby",
-          "Spayed / Neutered": "Yes",
-          "Age": "2 Years",
-          "Animal ID": "79345",
-          "Microchip Number": "981120030987654",
-          "Status": [
-              "Health checked.",
-              "Vaccinations up to date.",
-              "Regularly dewormed.",
-              "Microchipped."
-          ],
-          "A Little Bit About Me": "Mittens is a playful and affectionate tabby cat with a gentle disposition. She enjoys lounging in sunny spots and chasing after feather toys. Mittens is sociable and gets along well with other cats and calm dogs. She's curious and loves exploring her surroundings, but she's just as happy cuddling up on the couch with her favorite human. Mittens would be a wonderful addition to any loving home.",
-          "Image": "images/tabby.jpg"
-      },
-      {
-          "Name": "Shadow",
-          "Type": "Dog",
-          "Breed": "Siberian Husky",
-          "Sex": "Male",
-          "Color": "Grey and White",
-          "Spayed / Neutered": "Yes",
-          "Age": "2 Years",
-          "Animal ID": "83452",
-          "Microchip Number": "982000365812345",
-          "Status": [
-              "Health checked.",
-              "Vaccinations up to date.",
-              "Regularly dewormed.",
-              "Microchipped."
-          ],
-          "A Little Bit About Me": "Shadow is a stunning Siberian Husky with striking blue eyes and a fluffy grey and white coat. He's full of energy and loves to run and play. Shadow is friendly and social, getting along well with people and other dogs. He enjoys outdoor adventures, especially in colder weather. Shadow would thrive in an active household where he can receive plenty of exercise and attention.",
-          "Image": "images/siberianhusky.jpg"
-      },
-      {
-          "Name": "Whiskers",
-          "Type": "Cat",
-          "Breed": "Scottish Fold",
-          "Sex": "Male",
-          "Color": "Orange Tabby",
-          "Spayed / Neutered": "Yes",
-          "Age": "3 Years",
-          "Animal ID": "92571",
-          "Microchip Number": "985112009876543",
-          "Status": [
-              "Health checked.",
-              "Vaccinations up to date.",
-              "Regularly dewormed.",
-              "Microchipped."
-          ],
-          "A Little Bit About Me": "Whiskers is an adorable Scottish Fold with a distinctive folded ear and an orange tabby coat. He's affectionate and enjoys being in the company of his human companions. Whiskers loves to lounge in cozy spots and watch the world go by. He's playful and enjoys interactive toys, especially ones that involve chasing and pouncing. Whiskers would be a delightful addition to any loving home.",
-          "Image": "images/scottishfold.jpg"
-      },
-      {
-          "Name": "Cooper",
-          "Type": "Dog",
-          "Breed": "Poodle",
-          "Sex": "Male",
-          "Color": "Apricot",
-          "Spayed / Neutered": "Yes",
-          "Age": "3 Years",
-          "Animal ID": "10348",
-          "Microchip Number": "982000364512378",
-          "Status": [
-              "Health checked.",
-              "Vaccinations up to date.",
-              "Regularly dewormed.",
-              "Microchipped."
-          ],
-          "A Little Bit About Me": "Cooper is a friendly and intelligent Poodle with a soft apricot-colored coat. He's outgoing and enjoys meeting new people and dogs. Cooper is highly trainable and loves to learn new tricks. He's playful and enjoys games like fetch and tug-of-war. Cooper is also a great cuddler and enjoys relaxing with his family after a day of play. He would make a wonderful companion for someone looking for an affectionate and trainable dog.",
-          "Image": "images/poodle.jpg"
-      },
-      {
-          "Name": "Milo",
-          "Type": "Cat",
-          "Breed": "Bengal",
-          "Sex": "Male",
-          "Color": "Rosetted",
-          "Spayed / Neutered": "Yes",
-          "Age": "2 Years",
-          "Animal ID": "11342",
-          "Microchip Number": "981120040987123",
-          "Status": [
-              "Health checked.",
-              "Vaccinations up to date.",
-              "Regularly dewormed.",
-              "Microchipped."
-          ],
-          "A Little Bit About Me": "Milo is a stunning Bengal cat with distinctive rosetted markings and a sleek coat. He's adventurous and loves to explore his surroundings. Milo is also highly active and enjoys playtime with interactive toys. He's affectionate and enjoys being petted and cuddled by his human companions. Milo would do well in a home with plenty of enrichment and attention.",
-          "Image": "images/bengal.jpg"
-      },
-      {
-          "Name": "Rosie",
-          "Type": "Dog",
-          "Breed": "Cavalier King Charles Spaniel",
-          "Sex": "Female",
-          "Color": "Blenheim",
-          "Spayed / Neutered": "Yes",
-          "Age": "4 Years",
-          "Animal ID": "12439",
-          "Microchip Number": "985120034567890",
-          "Status": [
-              "Health checked.",
-              "Vaccinations up to date.",
-              "Regularly dewormed.",
-              "Microchipped."
-          ],
-          "A Little Bit About Me": "Rosie is a sweet and affectionate Cavalier King Charles Spaniel with a beautiful Blenheim coat. She's gentle and loves to be in the company of her human companions. Rosie enjoys leisurely walks and lounging on laps. She's also playful and enjoys games like fetch and chasing after toys. Rosie is looking for a loving home where she can be doted on and cherished.",
-          "Image": "images/cavalier.jpg"
-      },
-      {
-          "Name": "Simba",
-          "Type": "Cat",
-          "Breed": "Persian",
-          "Sex": "Male",
-          "Color": "Red",
-          "Spayed / Neutered": "Yes",
-          "Age": "5 Years",
-          "Animal ID": "13458",
-          "Microchip Number": "981120049876543",
-          "Status": [
-              "Health checked.",
-              "Vaccinations up to date.",
-              "Regularly dewormed.",
-              "Microchipped."
-          ],
-          "A Little Bit About Me": "Simba is a majestic Persian cat with a striking red coat and a regal demeanor. He's calm and enjoys lounging in cozy spots around the house. Simba is also affectionate and enjoys being petted and groomed. He's a bit of a foodie and loves treats and mealtime. Simba would do well in a calm and loving home where he can receive plenty of attention and care.",
-          "Image": "images/persian2.jpg"
-      },
-      {
-          "Name": "Toby",
-          "Type": "Dog",
-          "Breed": "Shih Tzu",
-          "Sex": "Male",
-          "Color": "Gold and White",
-          "Spayed / Neutered": "Yes",
-          "Age": "5 Years",
-          "Animal ID": "14567",
-          "Microchip Number": "982000367890123",
-          "Status": [
-              "Health checked.",
-              "Vaccinations up to date.",
-              "Regularly dewormed.",
-              "Microchipped."
-          ],
-          "A Little Bit About Me": "Toby is a friendly and affectionate Shih Tzu with a beautiful gold and white coat. He's outgoing and loves meeting new people and dogs. Toby enjoys leisurely walks and lounging on laps. He's also playful and enjoys interactive toys and games. Toby is looking for a loving home where he can be pampered and cherished.",
-          "Image": "images/shihtzu.jpg"
-      },
-      {
-        "Name": "Molly",
-        "Type": "Dog",
-        "Breed": "Pug",
-        "Sex": "Female",
-        "Color": "Fawn",
-        "Spayed / Neutered": "Yes",
-        "Age": "3 Years",
-        "Animal ID": "15678",
-        "Microchip Number": "982000367890123",
-        "Status": [
-            "Health checked.",
-            "Vaccinations up to date.",
-            "Regularly dewormed.",
-            "Microchipped."
-        ],
-        "A Little Bit About Me": "Molly is a playful and affectionate Pug with a wrinkled face and a curly tail. She's friendly and enjoys being around people and other pets. Molly loves to play fetch and enjoys short walks around the neighborhood. She's also fond of cuddling up on the couch and watching TV with her human companions. Molly would make a wonderful addition to any loving home.",
-        "Image": "images/pug.jpg"
-    },
-    {
-        "Name": "Leo",
-        "Type": "Cat",
-        "Breed": "Scottish Fold",
-        "Sex": "Male",
-        "Color": "Blue Tabby",
-        "Spayed / Neutered": "Yes",
-        "Age": "2 Years",
-        "Animal ID": "16789",
-        "Microchip Number": "981120040987123",
-        "Status": [
-            "Health checked.",
-            "Vaccinations up to date.",
-            "Regularly dewormed.",
-            "Microchipped."
-        ],
-        "A Little Bit About Me": "Leo is an adorable Scottish Fold with a playful personality and a distinctive folded ear. He's affectionate and enjoys being petted and cuddled by his human companions. Leo is curious and loves to explore his surroundings, especially if there are toys involved. He's also fond of lounging in sunny spots and watching birds outside the window. Leo would be a delightful companion for anyone looking for a loving and playful cat.",
-        "Image": "images/scottishfold2.jpg"
-    },
-    {
-        "Name": "Dexter",
-        "Type": "Dog",
-        "Breed": "Border Collie",
-        "Sex": "Male",
-        "Color": "Black and White",
-        "Spayed / Neutered": "Yes",
-        "Age": "4 Years",
-        "Animal ID": "17890",
-        "Microchip Number": "985120034567890",
-        "Status": [
-            "Health checked.",
-            "Vaccinations up to date.",
-            "Regularly dewormed.",
-            "Microchipped."
-        ],
-        "A Little Bit About Me": "Dexter is an intelligent and energetic Border Collie with a striking black and white coat. He's highly trainable and loves to learn new tricks and commands. Dexter enjoys outdoor activities like hiking and playing frisbee. He's also affectionate and loves to cuddle up with his human companions after a day of play. Dexter would thrive in an active household where he can receive plenty of mental and physical stimulation.",
-        "Image": "images/bordercollie.jpg"
-    },
-    {
-        "Name": "Lily",
-        "Type": "Cat",
-        "Breed": "Persian",
-        "Sex": "Female",
-        "Color": "Cream",
-        "Spayed / Neutered": "Yes",
-        "Age": "3 Years",
-        "Animal ID": "18901",
-        "Microchip Number": "981120049876543",
-        "Status": [
-            "Health checked.",
-            "Vaccinations up to date.",
-            "Regularly dewormed.",
-            "Microchipped."
-        ],
-        "A Little Bit About Me": "Lily is a charming Persian cat with a luxurious cream-colored coat and a sweet disposition. She's gentle and enjoys being in the company of her human companions. Lily loves to be groomed and pampered, and she'll happily purr away while receiving attention. She's also playful and enjoys batting at feather toys and chasing after laser pointers. Lily would make a wonderful addition to any loving home.",
-        "Image": "images/persian3.jpg"
-    },
-    {
-        "Name": "Oscar",
-        "Type": "Dog",
-        "Breed": "Cocker Spaniel",
-        "Sex": "Male",
-        "Color": "Golden",
-        "Spayed / Neutered": "Yes",
-        "Age": "3 Years",
-        "Animal ID": "19012",
-        "Microchip Number": "982000367890123",
-        "Status": [
-            "Health checked.",
-            "Vaccinations up to date.",
-            "Regularly dewormed.",
-            "Microchipped."
-        ],
-        "A Little Bit About Me": "Oscar is a friendly and outgoing Cocker Spaniel with a golden coat and a wagging tail. He's sociable and loves meeting new people and dogs. Oscar enjoys outdoor adventures like hiking and swimming, but he's just as content to cuddle up on the couch with his human companions. He's playful and enjoys games like fetch and tug-of-war. Oscar would make a wonderful companion for anyone looking for a loyal and affectionate dog.",
-        "Image": "images/cockerspaniel.jpg"
-    },
-    {
-        "Name": "Cleo",
-        "Type": "Cat",
-        "Breed": "Maine Coon",
-        "Sex": "Female",
-        "Color": "Tortoiseshell",
-        "Spayed / Neutered": "Yes",
-        "Age": "4 Years",
-        "Animal ID": "20123",
-        "Microchip Number": "981120040987123",
-        "Status": [
-            "Health checked.",
-            "Vaccinations up to date.",
-            "Regularly dewormed.",
-            "Microchipped."
-        ],
-        "A Little Bit About Me": "Cleo is a beautiful Maine Coon with a stunning tortoiseshell coat and striking green eyes. She's independent and enjoys exploring her surroundings at her own pace. Cleo is affectionate on her terms and will let you know when she's in the mood for pets and cuddles. She enjoys lounging in sunny spots and watching birds outside the window. Cleo would be a great companion for someone who appreciates her independent nature.",
-        "Image": "images/mainecoon2.jpg"
-    },
-    {
-        "Name": "Teddy",
-        "Type": "Dog",
-        "Breed": "Labradoodle",
-        "Sex": "Male",
-        "Color": "Apricot",
-        "Spayed / Neutered": "Yes",
-        "Age": "2 Years",
-        "Animal ID": "21234",
-        "Microchip Number": "985120034567890",
-        "Status": [
-            "Health checked.",
-            "Vaccinations up to date.",
-            "Regularly dewormed.",
-            "Microchipped."
-        ],
-        "A Little Bit About Me": "Teddy is a lovable Labradoodle with a soft apricot-colored coat and a playful personality. He's friendly and enjoys being around people and other pets. Teddy loves to play fetch and go for long walks in the park. He's also affectionate and enjoys snuggling up with his human companions. Teddy would make a wonderful addition to any loving home.",
-        "Image": "images/labradoodle.jpg"
-    },
-    {
-        "Name": "Misty",
-        "Type": "Cat",
-        "Breed": "Siamese",
-        "Sex": "Female",
-        "Color": "Blue Point",
-        "Spayed / Neutered": "Yes",
-        "Age": "3 Years",
-        "Animal ID": "22345",
-        "Microchip Number": "981120049876543",
-        "Status": [
-            "Health checked.",
-            "Vaccinations up to date.",
-            "Regularly dewormed.",
-            "Microchipped."
-        ],
-        "A Little Bit About Me": "Misty is a beautiful Siamese cat with striking blue eyes and a soft blue point coat. She's affectionate and enjoys being in the company of her human companions. Misty loves to be petted and will purr contentedly while receiving attention. She's also playful and enjoys chasing after feather toys and laser pointers. Misty would make a wonderful companion for anyone looking for a loving and playful cat.",
-        "Image": "images/siamese2.jpg"
-    },
-    {
-        "Name": "Rocky",
-        "Type": "Dog",
-        "Breed": "Rottweiler",
-        "Sex": "Male",
-        "Color": "Black and Tan",
-        "Spayed / Neutered": "Yes",
-        "Age": "4 Years",
-        "Animal ID": "23456",
-        "Microchip Number": "982000367890123",
-        "Status": [
-            "Health checked.",
-            "Vaccinations up to date.",
-            "Regularly dewormed.",
-            "Microchipped."
-        ],
-        "A Little Bit About Me": "Rocky is a handsome Rottweiler with a strong build and a confident demeanor. He's loyal and protective of his family but also friendly with new people once properly introduced. Rocky enjoys outdoor activities like hiking and running, but he's just as content to lounge around the house with his human companions. He's playful and enjoys games like tug-of-war and fetch. Rocky would make a loyal and loving companion for anyone looking for a devoted canine friend.",
-        "Image": "images/rottweiler.jpg"
-    },
-    {
-        "Name": "Luna",
-        "Type": "Cat",
-        "Breed": "British Shorthair",
-        "Sex": "Female",
-        "Color": "Cream",
-        "Spayed / Neutered": "Yes",
-        "Age": "2 Years",
-        "Animal ID": "24567",
-        "Microchip Number": "981120040987123",
-        "Status": [
-            "Health checked.",
-            "Vaccinations up to date.",
-            "Regularly dewormed.",
-            "Microchipped."
-        ],
-        "A Little Bit About Me": "Luna is a beautiful British Shorthair with a luxurious cream-colored coat and big round eyes. She's calm and enjoys lounging in sunny spots around the house. Luna is independent and enjoys having her own space but also appreciates gentle affection from her human companions. She's playful and enjoys batting at toys and chasing after laser pointers. Luna would make a wonderful companion for anyone looking for a gentle and loving cat.",
-        "Image": "images/british2.jpg"
-    }
-    
-  ]
+    "animals": [
+        {
+            "Name": "Baxter",
+            "Type": "Dog",
+            "Breed": "Beagle",
+            "Sex": "Male",
+            "Color": "Tri-color (Black, Brown, White)",
+            "Spayed / Neutered": "Yes",
+            "Age": "5 Years",
+            "Animal ID": "34621",
+            "Microchip Number": "982000364789210",
+            "Status": [
+                "Health checked.",
+                "Vaccinations up to date.",
+                "Regularly dewormed.",
+                "Microchipped."
+            ],
+            "A Little Bit About Me": "Meet Baxter, a lovable Beagle with a knack for sniffing out fun! Baxter was rescued from a shelter and has blossomed into a friendly and outgoing boy. He loves long walks and has a keen sense of smell. He's great with kids and other dogs, making him the perfect family pet. His favorite pastime is chasing squirrels in the park and curling up for naps. Baxter is looking for a loving home where he can share his endless affection and playful spirit.",
+            "Image": "images/beagle.jpg"
+        },
+        {
+            "Name": "Luna",
+            "Type": "Cat",
+            "Breed": "Maine Coon",
+            "Sex": "Female",
+            "Color": "Grey with white markings",
+            "Spayed / Neutered": "Yes",
+            "Age": "3 Years",
+            "Animal ID": "57281",
+            "Microchip Number": "981120019776432",
+            "Status": [
+                "Health checked.",
+                "Vaccinations up to date.",
+                "Regularly dewormed.",
+                "Microchipped."
+            ],
+            "A Little Bit About Me": "Luna is a majestic Maine Coon with a fluffy grey coat and striking white markings. She was found as a stray and has since become a gentle and affectionate companion. Luna enjoys perching on windowsills, watching birds, and being the center of attention. She's a bit shy at first but warms up quickly, especially if you have treats! Luna would thrive in a calm environment where she can relax and be pampered like the queen she is.",
+            "Image": "images/mainecoon.jpg"
+        },
+        {
+            "Name": "Sandy",
+            "Type": "Dog",
+            "Breed": "Golden Retriever",
+            "Sex": "Female",
+            "Color": "Golden",
+            "Spayed / Neutered": "Yes",
+            "Age": "7 Years",
+            "Animal ID": "41382",
+            "Microchip Number": "985112004567890",
+            "Status": [
+                "Health checked.",
+                "Vaccinations up to date.",
+                "Regularly dewormed.",
+                "Microchipped."
+            ],
+            "A Little Bit About Me": "Sandy is a heartwarming Golden Retriever with a golden coat as bright as her personality. Rescued from a neglectful situation, she has shown incredible resilience and love for life. Sandy is great with children and other pets, making her an ideal family dog. She enjoys outdoor adventures, especially swimming and fetching. Sandy is looking for a forever home where she can spread her joy and love.",
+            "Image": "images/golden.jpg"
+        },
+        {
+            "Name": "Oliver",
+            "Type": "Cat",
+            "Breed": "Siamese",
+            "Sex": "Male",
+            "Color": "Seal Point",
+            "Spayed / Neutered": "Yes",
+            "Age": "2 Years",
+            "Animal ID": "62894",
+            "Microchip Number": "981120025678902",
+            "Status": [
+                "Health checked.",
+                "Vaccinations up to date.",
+                "Regularly dewormed.",
+                "Microchipped."
+            ],
+            "A Little Bit About Me": "Oliver is a sleek Siamese cat with striking blue eyes and a seal point coat. Found wandering in a neighborhood, he's adapted well to shelter life but is eager for a permanent home. Oliver is vocal, expressing his thoughts freely, and enjoys interactive playtime. He's affectionate and loves to be close to his human companions, often following them around the house. Oliver would do best in a home where he can receive plenty of attention and love.",
+            "Image": "images/siamese.jpg"
+        },
+        {
+            "Name": "Max",
+            "Type": "Dog",
+            "Breed": "Labrador Retriever",
+            "Sex": "Male",
+            "Color": "Chocolate",
+            "Spayed / Neutered": "Yes",
+            "Age": "4 Years",
+            "Animal ID": "47920",
+            "Microchip Number": "985120031478902",
+            "Status": [
+                "Health checked.",
+                "Vaccinations up to date.",
+                "Regularly dewormed.",
+                "Microchipped."
+            ],
+            "A Little Bit About Me": "Max is a charming Chocolate Labrador with a love for life and a tail that never stops wagging. Rescued from an overcrowded shelter, Max has shown immense gratitude and loyalty to his caregivers. He is full of energy and would thrive in a home with a backyard or regular access to outdoor activities. Max is great with children and other dogs, and he's always up for a game of fetch or a leisurely walk. His ideal home would be with an active family who can match his energy and zest for life.",
+            "Image": "images/chocolab.jpg"
+        },
+        {
+            "Name": "Daisy",
+            "Type": "Cat",
+            "Breed": "Persian",
+            "Sex": "Female",
+            "Color": "White",
+            "Spayed / Neutered": "Yes",
+            "Age": "6 Years",
+            "Animal ID": "58329",
+            "Microchip Number": "981120036712345",
+            "Status": [
+                "Health checked.",
+                "Vaccinations up to date.",
+                "Regularly dewormed.",
+                "Microchipped."
+            ],
+            "A Little Bit About Me": "Daisy is a stunning white Persian cat with a luxurious coat and gentle demeanor. She was surrendered by an owner who could no longer care for her. Daisy is a bit of a diva and loves being the center of attention. She enjoys being groomed and will happily sit in your lap for hours. She's not fond of loud noises or fast movements, so a quiet and calm household would be ideal. Daisy is looking for a loving home where she can be pampered and adored.",
+            "Image": "images/persian.jpg"
+        },
+        {
+            "Name": "Charlie",
+            "Type": "Dog",
+            "Breed": "Dachshund",
+            "Sex": "Male",
+            "Color": "Dapple (Black and Gray)",
+            "Spayed / Neutered": "Yes",
+            "Age": "3 Years",
+            "Animal ID": "49583",
+            "Microchip Number": "982000367829101",
+            "Status": [
+                "Health checked.",
+                "Vaccinations up to date.",
+                "Regularly dewormed.",
+                "Microchipped."
+            ],
+            "A Little Bit About Me": "Charlie is a spirited Dapple Dachshund with a playful personality. He was found as a stray and has since shown an incredible zest for life. Charlie loves exploring, whether it's a new trail or the corners of his home. He's a bit mischievous and enjoys hiding his toys. Charlie would do well in a home with an individual or family who enjoys fun and adventure. He's small but has a big heart and a lot of love to give.",
+            "Image": "images/dachshund.jpg"
+        },
+        {
+            "Name": "George",
+            "Type": "Cat",
+            "Breed": "British Shorthair",
+            "Sex": "Male",
+            "Color": "Blue (Gray)",
+            "Spayed / Neutered": "Yes",
+            "Age": "4 Years",
+            "Animal ID": "61029",
+            "Microchip Number": "985112007651234",
+            "Status": [
+                "Health checked.",
+                "Vaccinations up to date.",
+                "Regularly dewormed.",
+                "Microchipped."
+            ],
+            "A Little Bit About Me": "George is a robust British Shorthair with a striking blue-gray coat and a calm, dignified demeanor. Rescued from a busy city environment, he's adapted well to a quieter life. George enjoys leisurely days, lounging in sunny spots, and watching the world go by. He's not overly demanding for attention but appreciates a good chin scratch and will purr loudly in response. George is a bit reserved at first but becomes a loyal companion once he feels comfortable. He would be perfect for someone seeking a low-maintenance, independent cat.",
+            "Image": "images/british.jpg"
+        },
+        {
+            "Name": "Bella",
+            "Type": "Dog",
+            "Breed": "Boxer",
+            "Sex": "Female",
+            "Color": "Fawn with white markings",
+            "Spayed / Neutered": "Yes",
+            "Age": "6 Years",
+            "Animal ID": "50824",
+            "Microchip Number": "982000360234567",
+            "Status": [
+                "Health checked.",
+                "Vaccinations up to date.",
+                "Regularly dewormed.",
+                "Microchipped."
+            ],
+            "A Little Bit About Me": "Bella is a spirited Boxer with a fawn coat and charming white markings. She was rescued from a neglectful situation and has shown immense love and gratitude to her caregivers. Bella is energetic and playful, enjoying activities like running and playing fetch. She's great with older children and would thrive in a home where she can be active and engaged. Bella has a big personality and would be a fantastic companion for someone who loves adventure and fun.",
+            "Image": "images/boxer.jpg"
+        },
+        {
+            "Name": "Sophie",
+            "Type": "Cat",
+            "Breed": "Ragdoll",
+            "Sex": "Female",
+            "Color": "Seal point with blue eyes",
+            "Spayed / Neutered": "Yes",
+            "Age": "1 Year",
+            "Animal ID": "63845",
+            "Microchip Number": "985112008765432",
+            "Status": [
+                "Health checked.",
+                "Vaccinations up to date.",
+                "Regularly dewormed.",
+                "Microchipped."
+            ],
+            "A Little Bit About Me": "Sophie is a young Ragdoll cat with a soft seal point coat and mesmerizing blue eyes. She was found as a kitten and raised in a foster home. Sophie is incredibly affectionate, often seeking out laps to curl up in. She's playful and enjoys interactive toys, but she's also content to relax and watch the world go by. Sophie gets along well with other pets and would be an excellent addition to a loving family or individual looking for a gentle and loving companion.",
+            "Image": "images/ragdoll.jpg"
+        },
+        {
+            "Name": "Rocky",
+            "Type": "Dog",
+            "Breed": "German Shepherd",
+            "Sex": "Male",
+            "Color": "Black and Tan",
+            "Spayed / Neutered": "Yes",
+            "Age": "3 Years",
+            "Animal ID": "73820",
+            "Microchip Number": "982000365432189",
+            "Status": [
+                "Health checked.",
+                "Vaccinations up to date.",
+                "Regularly dewormed.",
+                "Microchipped."
+            ],
+            "A Little Bit About Me": "Rocky is a loyal and intelligent German Shepherd with a striking black and tan coat. He's a quick learner and loves to show off his obedience skills. Rocky enjoys outdoor activities like hiking and jogging, and he's always up for an adventure. He's great with older children and adults and is protective of his family. Rocky is looking for an experienced owner who can provide him with the mental and physical stimulation he needs to thrive.",
+            "Image": "images/germanshepherd.jpg"
+        },
+        {
+            "Name": "Mittens",
+            "Type": "Cat",
+            "Breed": "Domestic Shorthair",
+            "Sex": "Female",
+            "Color": "Tabby",
+            "Spayed / Neutered": "Yes",
+            "Age": "2 Years",
+            "Animal ID": "79345",
+            "Microchip Number": "981120030987654",
+            "Status": [
+                "Health checked.",
+                "Vaccinations up to date.",
+                "Regularly dewormed.",
+                "Microchipped."
+            ],
+            "A Little Bit About Me": "Mittens is a playful and affectionate tabby cat with a gentle disposition. She enjoys lounging in sunny spots and chasing after feather toys. Mittens is sociable and gets along well with other cats and calm dogs. She's curious and loves exploring her surroundings, but she's just as happy cuddling up on the couch with her favorite human. Mittens would be a wonderful addition to any loving home.",
+            "Image": "images/tabby.jpg"
+        },
+        {
+            "Name": "Shadow",
+            "Type": "Dog",
+            "Breed": "Siberian Husky",
+            "Sex": "Male",
+            "Color": "Grey and White",
+            "Spayed / Neutered": "Yes",
+            "Age": "2 Years",
+            "Animal ID": "83452",
+            "Microchip Number": "982000365812345",
+            "Status": [
+                "Health checked.",
+                "Vaccinations up to date.",
+                "Regularly dewormed.",
+                "Microchipped."
+            ],
+            "A Little Bit About Me": "Shadow is a stunning Siberian Husky with striking blue eyes and a fluffy grey and white coat. He's full of energy and loves to run and play. Shadow is friendly and social, getting along well with people and other dogs. He enjoys outdoor adventures, especially in colder weather. Shadow would thrive in an active household where he can receive plenty of exercise and attention.",
+            "Image": "images/siberianhusky.jpg"
+        },
+        {
+            "Name": "Whiskers",
+            "Type": "Cat",
+            "Breed": "Scottish Fold",
+            "Sex": "Male",
+            "Color": "Orange Tabby",
+            "Spayed / Neutered": "Yes",
+            "Age": "3 Years",
+            "Animal ID": "92571",
+            "Microchip Number": "985112009876543",
+            "Status": [
+                "Health checked.",
+                "Vaccinations up to date.",
+                "Regularly dewormed.",
+                "Microchipped."
+            ],
+            "A Little Bit About Me": "Whiskers is an adorable Scottish Fold with a distinctive folded ear and an orange tabby coat. He's affectionate and enjoys being in the company of his human companions. Whiskers loves to lounge in cozy spots and watch the world go by. He's playful and enjoys interactive toys, especially ones that involve chasing and pouncing. Whiskers would be a delightful addition to any loving home.",
+            "Image": "images/scottishfold.jpg"
+        },
+        {
+            "Name": "Cooper",
+            "Type": "Dog",
+            "Breed": "Poodle",
+            "Sex": "Male",
+            "Color": "Apricot",
+            "Spayed / Neutered": "Yes",
+            "Age": "3 Years",
+            "Animal ID": "10348",
+            "Microchip Number": "982000364512378",
+            "Status": [
+                "Health checked.",
+                "Vaccinations up to date.",
+                "Regularly dewormed.",
+                "Microchipped."
+            ],
+            "A Little Bit About Me": "Cooper is a friendly and intelligent Poodle with a soft apricot-colored coat. He's outgoing and enjoys meeting new people and dogs. Cooper is highly trainable and loves to learn new tricks. He's playful and enjoys games like fetch and tug-of-war. Cooper is also a great cuddler and enjoys relaxing with his family after a day of play. He would make a wonderful companion for someone looking for an affectionate and trainable dog.",
+            "Image": "images/poodle.jpg"
+        },
+        {
+            "Name": "Milo",
+            "Type": "Cat",
+            "Breed": "Bengal",
+            "Sex": "Male",
+            "Color": "Rosetted",
+            "Spayed / Neutered": "Yes",
+            "Age": "2 Years",
+            "Animal ID": "11342",
+            "Microchip Number": "981120040987123",
+            "Status": [
+                "Health checked.",
+                "Vaccinations up to date.",
+                "Regularly dewormed.",
+                "Microchipped."
+            ],
+            "A Little Bit About Me": "Milo is a stunning Bengal cat with distinctive rosetted markings and a sleek coat. He's adventurous and loves to explore his surroundings. Milo is also highly active and enjoys playtime with interactive toys. He's affectionate and enjoys being petted and cuddled by his human companions. Milo would do well in a home with plenty of enrichment and attention.",
+            "Image": "images/bengal.jpg"
+        },
+        {
+            "Name": "Rosie",
+            "Type": "Dog",
+            "Breed": "Cavalier King Charles Spaniel",
+            "Sex": "Female",
+            "Color": "Blenheim",
+            "Spayed / Neutered": "Yes",
+            "Age": "4 Years",
+            "Animal ID": "12439",
+            "Microchip Number": "985120034567890",
+            "Status": [
+                "Health checked.",
+                "Vaccinations up to date.",
+                "Regularly dewormed.",
+                "Microchipped."
+            ],
+            "A Little Bit About Me": "Rosie is a sweet and affectionate Cavalier King Charles Spaniel with a beautiful Blenheim coat. She's gentle and loves to be in the company of her human companions. Rosie enjoys leisurely walks and lounging on laps. She's also playful and enjoys games like fetch and chasing after toys. Rosie is looking for a loving home where she can be doted on and cherished.",
+            "Image": "images/cavalier.jpg"
+        },
+        {
+            "Name": "Simba",
+            "Type": "Cat",
+            "Breed": "Persian",
+            "Sex": "Male",
+            "Color": "Red",
+            "Spayed / Neutered": "Yes",
+            "Age": "5 Years",
+            "Animal ID": "13458",
+            "Microchip Number": "981120049876543",
+            "Status": [
+                "Health checked.",
+                "Vaccinations up to date.",
+                "Regularly dewormed.",
+                "Microchipped."
+            ],
+            "A Little Bit About Me": "Simba is a majestic Persian cat with a striking red coat and a regal demeanor. He's calm and enjoys lounging in cozy spots around the house. Simba is also affectionate and enjoys being petted and groomed. He's a bit of a foodie and loves treats and mealtime. Simba would do well in a calm and loving home where he can receive plenty of attention and care.",
+            "Image": "images/persian2.jpg"
+        },
+        {
+            "Name": "Toby",
+            "Type": "Dog",
+            "Breed": "Shih Tzu",
+            "Sex": "Male",
+            "Color": "Gold and White",
+            "Spayed / Neutered": "Yes",
+            "Age": "5 Years",
+            "Animal ID": "14567",
+            "Microchip Number": "982000367890123",
+            "Status": [
+                "Health checked.",
+                "Vaccinations up to date.",
+                "Regularly dewormed.",
+                "Microchipped."
+            ],
+            "A Little Bit About Me": "Toby is a friendly and affectionate Shih Tzu with a beautiful gold and white coat. He's outgoing and loves meeting new people and dogs. Toby enjoys leisurely walks and lounging on laps. He's also playful and enjoys interactive toys and games. Toby is looking for a loving home where he can be pampered and cherished.",
+            "Image": "images/shihtzu.jpg"
+        },
+        {
+            "Name": "Molly",
+            "Type": "Dog",
+            "Breed": "Pug",
+            "Sex": "Female",
+            "Color": "Fawn",
+            "Spayed / Neutered": "Yes",
+            "Age": "3 Years",
+            "Animal ID": "15678",
+            "Microchip Number": "982000367890123",
+            "Status": [
+                "Health checked.",
+                "Vaccinations up to date.",
+                "Regularly dewormed.",
+                "Microchipped."
+            ],
+            "A Little Bit About Me": "Molly is a playful and affectionate Pug with a wrinkled face and a curly tail. She's friendly and enjoys being around people and other pets. Molly loves to play fetch and enjoys short walks around the neighborhood. She's also fond of cuddling up on the couch and watching TV with her human companions. Molly would make a wonderful addition to any loving home.",
+            "Image": "images/pug.jpg"
+        },
+        {
+            "Name": "Leo",
+            "Type": "Cat",
+            "Breed": "Scottish Fold",
+            "Sex": "Male",
+            "Color": "Blue Tabby",
+            "Spayed / Neutered": "Yes",
+            "Age": "2 Years",
+            "Animal ID": "16789",
+            "Microchip Number": "981120040987123",
+            "Status": [
+                "Health checked.",
+                "Vaccinations up to date.",
+                "Regularly dewormed.",
+                "Microchipped."
+            ],
+            "A Little Bit About Me": "Leo is an adorable Scottish Fold with a playful personality and a distinctive folded ear. He's affectionate and enjoys being petted and cuddled by his human companions. Leo is curious and loves to explore his surroundings, especially if there are toys involved. He's also fond of lounging in sunny spots and watching birds outside the window. Leo would be a delightful companion for anyone looking for a loving and playful cat.",
+            "Image": "images/scottishfold2.jpg"
+        },
+        {
+            "Name": "Dexter",
+            "Type": "Dog",
+            "Breed": "Border Collie",
+            "Sex": "Male",
+            "Color": "Black and White",
+            "Spayed / Neutered": "Yes",
+            "Age": "4 Years",
+            "Animal ID": "17890",
+            "Microchip Number": "985120034567890",
+            "Status": [
+                "Health checked.",
+                "Vaccinations up to date.",
+                "Regularly dewormed.",
+                "Microchipped."
+            ],
+            "A Little Bit About Me": "Dexter is an intelligent and energetic Border Collie with a striking black and white coat. He's highly trainable and loves to learn new tricks and commands. Dexter enjoys outdoor activities like hiking and playing frisbee. He's also affectionate and loves to cuddle up with his human companions after a day of play. Dexter would thrive in an active household where he can receive plenty of mental and physical stimulation.",
+            "Image": "images/bordercollie.jpg"
+        },
+        {
+            "Name": "Lily",
+            "Type": "Cat",
+            "Breed": "Persian",
+            "Sex": "Female",
+            "Color": "Cream",
+            "Spayed / Neutered": "Yes",
+            "Age": "3 Years",
+            "Animal ID": "18901",
+            "Microchip Number": "981120049876543",
+            "Status": [
+                "Health checked.",
+                "Vaccinations up to date.",
+                "Regularly dewormed.",
+                "Microchipped."
+            ],
+            "A Little Bit About Me": "Lily is a charming Persian cat with a luxurious cream-colored coat and a sweet disposition. She's gentle and enjoys being in the company of her human companions. Lily loves to be groomed and pampered, and she'll happily purr away while receiving attention. She's also playful and enjoys batting at feather toys and chasing after laser pointers. Lily would make a wonderful addition to any loving home.",
+            "Image": "images/persian3.jpg"
+        },
+        {
+            "Name": "Oscar",
+            "Type": "Dog",
+            "Breed": "Cocker Spaniel",
+            "Sex": "Male",
+            "Color": "Golden",
+            "Spayed / Neutered": "Yes",
+            "Age": "3 Years",
+            "Animal ID": "19012",
+            "Microchip Number": "982000367890123",
+            "Status": [
+                "Health checked.",
+                "Vaccinations up to date.",
+                "Regularly dewormed.",
+                "Microchipped."
+            ],
+            "A Little Bit About Me": "Oscar is a friendly and outgoing Cocker Spaniel with a golden coat and a wagging tail. He's sociable and loves meeting new people and dogs. Oscar enjoys outdoor adventures like hiking and swimming, but he's just as content to cuddle up on the couch with his human companions. He's playful and enjoys games like fetch and tug-of-war. Oscar would make a wonderful companion for anyone looking for a loyal and affectionate dog.",
+            "Image": "images/cockerspaniel.jpg"
+        },
+        {
+            "Name": "Cleo",
+            "Type": "Cat",
+            "Breed": "Maine Coon",
+            "Sex": "Female",
+            "Color": "Tortoiseshell",
+            "Spayed / Neutered": "Yes",
+            "Age": "4 Years",
+            "Animal ID": "20123",
+            "Microchip Number": "981120040987123",
+            "Status": [
+                "Health checked.",
+                "Vaccinations up to date.",
+                "Regularly dewormed.",
+                "Microchipped."
+            ],
+            "A Little Bit About Me": "Cleo is a beautiful Maine Coon with a stunning tortoiseshell coat and striking green eyes. She's independent and enjoys exploring her surroundings at her own pace. Cleo is affectionate on her terms and will let you know when she's in the mood for pets and cuddles. She enjoys lounging in sunny spots and watching birds outside the window. Cleo would be a great companion for someone who appreciates her independent nature.",
+            "Image": "images/mainecoon2.jpg"
+        },
+        {
+            "Name": "Teddy",
+            "Type": "Dog",
+            "Breed": "Labradoodle",
+            "Sex": "Male",
+            "Color": "Apricot",
+            "Spayed / Neutered": "Yes",
+            "Age": "2 Years",
+            "Animal ID": "21234",
+            "Microchip Number": "985120034567890",
+            "Status": [
+                "Health checked.",
+                "Vaccinations up to date.",
+                "Regularly dewormed.",
+                "Microchipped."
+            ],
+            "A Little Bit About Me": "Teddy is a lovable Labradoodle with a soft apricot-colored coat and a playful personality. He's friendly and enjoys being around people and other pets. Teddy loves to play fetch and go for long walks in the park. He's also affectionate and enjoys snuggling up with his human companions. Teddy would make a wonderful addition to any loving home.",
+            "Image": "images/labradoodle.jpg"
+        },
+        {
+            "Name": "Misty",
+            "Type": "Cat",
+            "Breed": "Siamese",
+            "Sex": "Female",
+            "Color": "Blue Point",
+            "Spayed / Neutered": "Yes",
+            "Age": "3 Years",
+            "Animal ID": "22345",
+            "Microchip Number": "981120049876543",
+            "Status": [
+                "Health checked.",
+                "Vaccinations up to date.",
+                "Regularly dewormed.",
+                "Microchipped."
+            ],
+            "A Little Bit About Me": "Misty is a beautiful Siamese cat with striking blue eyes and a soft blue point coat. She's affectionate and enjoys being in the company of her human companions. Misty loves to be petted and will purr contentedly while receiving attention. She's also playful and enjoys chasing after feather toys and laser pointers. Misty would make a wonderful companion for anyone looking for a loving and playful cat.",
+            "Image": "images/siamese2.jpg"
+        },
+        {
+            "Name": "Luna",
+            "Type": "Cat",
+            "Breed": "British Shorthair",
+            "Sex": "Female",
+            "Color": "Cream",
+            "Spayed / Neutered": "Yes",
+            "Age": "2 Years",
+            "Animal ID": "24567",
+            "Microchip Number": "981120040987123",
+            "Status": [
+                "Health checked.",
+                "Vaccinations up to date.",
+                "Regularly dewormed.",
+                "Microchipped."
+            ],
+            "A Little Bit About Me": "Luna is a beautiful British Shorthair with a luxurious cream-colored coat and big round eyes. She's calm and enjoys lounging in sunny spots around the house. Luna is independent and enjoys having her own space but also appreciates gentle affection from her human companions. She's playful and enjoys batting at toys and chasing after laser pointers. Luna would make a wonderful companion for anyone looking for a gentle and loving cat.",
+            "Image": "images/british2.jpg"
+        },
+        {
+            "Name": "das",
+            "Breed": "dsa",
+            "Type": "das",
+            "Age": "123",
+            "Sex": "Male",
+            "Image": "http://localhost:3000"
+        },
+        {
+            "Name": "asd",
+            "Breed": "dsa",
+            "Type": "asd",
+            "Age": "11",
+            "Sex": "Male",
+            "Image": "http://localhost:3000/"
+        },
+        {
+            "Name": "qwer",
+            "Breed": "rewq",
+            "Type": "qwr",
+            "Age": "123",
+            "Sex": "Male",
+            "Image": "http://localhost:3000/"
+        },
+        {
+            "Name": "hub",
+            "Breed": "rtjnm",
+            "Type": "rftygkm",
+            "Age": "1111",
+            "Sex": "Male",
+            "Image": "http://localhost:3000/"
+        }
+    ]
 }

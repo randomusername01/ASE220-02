@@ -1,10 +1,12 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Pet Gallery</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <style>
     .pet-image {
       width: 100%;
@@ -13,77 +15,258 @@
     }
   </style>
 </head>
+
 <body>
-<div class="container">
-  <div class="row" id="petGallery"></div>
-  <div class="row mt-3">
-    <div class="col">
-      <nav aria-label="Page navigation">
-        <ul class="pagination justify-content-center" id="pagination"></ul>
-      </nav>
+  <div class="container">
+    <div class="row mt-3">
+      <div class="col">
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#createPetModal">Create Pet</button>
+      </div>
+    </div>
+    <div class="row" id="petGallery"></div>
+    <div class="row mt-3">
+      <div class="col">
+        <nav aria-label="Page navigation">
+          <ul class="pagination justify-content-center" id="pagination"></ul>
+        </nav>
+      </div>
     </div>
   </div>
-</div>
 
-<script>
-  let currentPage = 1;
-  const petsPerPage = 9;
+  <div class="modal fade" id="createPetModal" tabindex="-1" aria-labelledby="createPetModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="createPetModalLabel">Create Pet</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="createPetForm">
+            <div class="mb-3">
+              <label for="petName" class="form-label">Name</label>
+              <input type="text" class="form-control" id="petName" required>
+            </div>
+            <div class="mb-3">
+              <label for="petBreed" class="form-label">Breed</label>
+              <input type="text" class="form-control" id="petBreed" required>
+            </div>
+            <div class="mb-3">
+              <label for="petType" class="form-label">Type</label>
+              <input type="text" class="form-control" id="petType" required>
+            </div>
+            <div class="mb-3">
+              <label for="petAge" class="form-label">Age</label>
+              <input type="number" class="form-control" id="petAge" required>
+            </div>
+            <div class="mb-3">
+              <label for="petSex" class="form-label">Sex</label>
+              <select class="form-select" id="petSex">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="petImage" class="form-label">Image URL</label>
+              <input type="url" class="form-control" id="petImage" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  function loadAndDisplayPets(page) {
-    fetch('animals.json')
-      .then(response => response.json())
-      .then(data => {
-        const startIndex = (page - 1) * petsPerPage;
-        const endIndex = startIndex + petsPerPage;
-        const petsToShow = data.animals.slice(startIndex, endIndex);
+  <div class="modal fade" id="editPetModal" tabindex="-1" aria-labelledby="editPetModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="editPetModalLabel">Edit Pet</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="editPetForm">
+            <input type="hidden" id="editPetID">
+            <div class="mb-3">
+              <label for="editPetName" class="form-label">Name</label>
+              <input type="text" class="form-control" id="editPetName" required>
+            </div>
+            <div class="mb-3">
+              <label for="editPetBreed" class="form-label">Breed</label>
+              <input type="text" class="form-control" id="editPetBreed" required>
+            </div>
+            <div class="mb-3">
+              <label for="editPetType" class="form-label">Type</label>
+              <input type="text" class="form-control" id="editPetType" required>
+            </div>
+            <div class="mb-3">
+              <label for="editPetAge" class="form-label">Age</label>
+              <input type="number" class="form-control" id="editPetAge" required>
+            </div>
+            <div class="mb-3">
+              <label for="editPetSex" class="form-label">Sex</label>
+              <select class="form-select" id="editPetSex">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="editPetImage" class="form-label">Image URL</label>
+              <input type="url" class="form-control" id="editPetImage" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Save changes</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
-        let petHtml = '';
-        petsToShow.forEach(pet => {
-          const genderIcon = pet.Sex === 'Male' ? 'male.svg' : 'female.svg';
-          petHtml += `
-            <div class="col-md-4">
-              <div class="card">
-                <img src="${pet.Image}" class="card-img-top pet-image" alt="${pet.Breed}">
-                <div class="card-body">
-                  <h5 class="card-title">${pet.Name}</h5>
-                  <p class="card-text">Breed: ${pet.Breed}</p>
-                  <p class="card-text">Type: ${pet.Type}</p>
-                  <p class="card-text"><b>Age: ${pet.Age}</b></p>
-                  <p class="card-text"><img src="images/${genderIcon}" alt="${pet.Sex}" style="height: 20px;"></p>
-                  <a href="detail.html?id=${encodeURIComponent(pet['Animal ID'])}" class="btn btn-primary">Learn More</a>
-                </div>
-              </div>
-            </div>`;
-        });
-        document.getElementById('petGallery').innerHTML = petHtml;
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script>
+    let currentPage = 1;
+    const petsPerPage = 9;
+    let petsData = [];
 
-        updatePagination(data.animals.length);
-      })
-      .catch(error => console.error('Error loading pet data:', error));
-  }
-
-  function updatePagination(totalPets) {
-    const totalPages = Math.ceil(totalPets / petsPerPage);
-    let paginationHtml = '';
-
-    for (let i = 1; i <= totalPages; i++) {
-      paginationHtml += `
-        <li class="page-item ${i === currentPage ? 'active' : ''}">
-          <button class="page-link" onclick="changePage(${i})">${i}</button>
-        </li>`;
+    async function loadAndDisplayPets(page) {
+      try {
+        const response = await fetch('http://localhost:3000/api/animals/animals');
+        const data = await response.json();
+        petsData = data.animals;
+        renderPets(page);
+      } catch (error) {
+        console.error('Error loading pet data:', error);
+      }
     }
 
-    document.getElementById('pagination').innerHTML = paginationHtml;
-  }
+    function renderPets(page) {
+      const startIndex = (page - 1) * petsPerPage;
+      const endIndex = startIndex + petsPerPage;
+      const petsToShow = petsData.slice(startIndex, endIndex);
 
-  function changePage(page) {
-    currentPage = page;
-    loadAndDisplayPets(currentPage);
-  }
+      let petHtml = '';
+      petsToShow.forEach(pet => {
+        petHtml += `
+        <div class="col-md-4">
+          <div class="card">
+            <img src="${pet.Image}" class="card-img-top pet-image" alt="${pet.Breed}">
+            <div class="card-body">
+              <h5 class="card-title">${pet.Name}</h5>
+              <p class="card-text">Breed: ${pet.Breed}</p>
+              <p class="card-text">Type: ${pet.Type}</p>
+              <p class="card-text"><b>Age: ${pet.Age}</b></p>
+              <p class="card-text">Sex: ${pet.Sex}</p>
+              <button class="btn btn-primary" onclick="showEditPetModal('${pet['Animal ID']}')">Edit</button>
+              <button class="btn btn-danger" onclick="deletePet('${pet['Animal ID']}')">Delete</button>
+            </div>
+          </div>
+        </div>`;
+      });
+      document.getElementById('petGallery').innerHTML = petHtml;
+      updatePagination(petsData.length);
+    }
 
-  window.onload = () => loadAndDisplayPets(currentPage);
-</script>
+    function updatePagination(totalPets) {
+      const totalPages = Math.ceil(totalPets / petsPerPage);
+      let paginationHtml = '';
+      for (let i = 1; i <= totalPages; i++) {
+        paginationHtml += `<li class="page-item ${i === currentPage ? 'active' : ''}"><button class="page-link" onclick="changePage(${i})">${i}</button></li>`;
+      }
+      document.getElementById('pagination').innerHTML = paginationHtml;
+    }
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    function changePage(page) {
+      currentPage = page;
+      loadAndDisplayPets(currentPage);
+    }
+
+    document.getElementById('createPetForm').addEventListener('submit', async function (event) {
+      event.preventDefault();
+      const newPet = {
+        Name: document.getElementById('petName').value,
+        Breed: document.getElementById('petBreed').value,
+        Type: document.getElementById('petType').value,
+        Age: document.getElementById('petAge').value,
+        Sex: document.getElementById('petSex').value,
+        Image: document.getElementById('petImage').value,
+        'Animal ID': `id_${Date.now()}`
+      };
+
+      const response = await fetch('http://localhost:3000/api/animals', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(newPet)
+      });
+
+      if (response.ok) {
+        const addedPet = await response.json();
+        petsData.push(addedPet);
+        loadAndDisplayPets(currentPage);
+        document.getElementById('createPetForm').reset();
+        bootstrap.Modal.getInstance(document.getElementById('createPetModal')).hide();
+      } else {
+        const errorText = await response.text();
+        alert(`Failed to create pet: ${errorText}`);
+      }
+    });
+
+
+    async function deletePet(animalID) {
+      try {
+        const response = await fetch(`http://localhost:3000/api/animals/${animalID}`, {
+          method: 'DELETE'
+        });
+        if (!response.ok) {
+          throw new Error('Failed to delete the animal');
+        }
+        loadAndDisplayPets(currentPage);
+      } catch (error) {
+        console.error('Error:', error);
+        alert('Error deleting pet');
+      }
+    }
+    function showEditPetModal(animalID) {
+      const pet = petsData.find(p => p['Animal ID'] === animalID);
+      if (pet) {
+        document.getElementById('editPetID').value = pet['Animal ID'];
+        document.getElementById('editPetName').value = pet.Name;
+        document.getElementById('editPetBreed').value = pet.Breed;
+        document.getElementById('editPetType').value = pet.Type;
+        document.getElementById('editPetAge').value = pet.Age;
+        document.getElementById('editPetSex').value = pet.Sex;
+        document.getElementById('editPetImage').value = pet.Image;
+
+        var editModal = new bootstrap.Modal(document.getElementById('editPetModal'));
+        editModal.show();
+      }
+    }
+
+    document.getElementById('editPetForm').addEventListener('submit', async function (event) {
+      event.preventDefault();
+      const petID = document.getElementById('editPetID').value;
+      const updatedPet = {
+        Name: document.getElementById('editPetName').value,
+        Breed: document.getElementById('editPetBreed').value,
+        Type: document.getElementById('editPetType').value,
+        Age: document.getElementById('editPetAge').value,
+        Sex: document.getElementById('editPetSex').value,
+        Image: document.getElementById('editPetImage').value
+      };
+      await fetch(`http://localhost:3000/api/animals/animals/${petID}`, {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(updatedPet)
+      });
+      loadAndDisplayPets(currentPage);
+      bootstrap.Modal.getInstance(document.getElementById('editPetModal')).hide();
+    });
+
+    window.onload = () => loadAndDisplayPets(currentPage);
+  </script>
 </body>
+
 </html>
